@@ -2,6 +2,8 @@ from crewai import Agent, Crew, Process, Task
 from crewai.project import CrewBase, agent, crew, task
 from crewai.agents.agent_builder.base_agent import BaseAgent
 
+from stock_briefing.tools.custom_tool import get_stock_data
+
 
 @CrewBase
 class StockBriefing():
@@ -14,6 +16,7 @@ class StockBriefing():
     def stock_data_collector(self) -> Agent:
         return Agent(
             config=self.agents_config['stock_data_collector'], # type: ignore[index]
+            tools=[get_stock_data],
             verbose=True
         )
     

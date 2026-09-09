@@ -1,6 +1,7 @@
 stock_data_collection_task:
   description: >
-    Collect and organize stock data related to {ticker}
+    Use the Get Stock Data tool to fetch current stock data for {ticker}, then
+    collect and organize it.
   expected_output: >
     A structured dataset containing relevant stock data for {ticker}
   agent: stock_data_collector
