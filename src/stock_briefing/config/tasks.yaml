@@ -1,17 +1,42 @@
-research_task:
+stock_data_collection_task:
   description: >
-    Conduct a thorough research about {topic}
-    Make sure you find any interesting and relevant information given
-    the current year is {current_year}.
+    Collect and organize stock data related to {topic}
   expected_output: >
-    A list with 10 bullet points of the most relevant information about {topic}
-  agent: researcher
+    A structured dataset containing relevant stock data for {topic}
+  agent: stock_data_collector
 
-reporting_task:
+stock_data_analysis_task:
   description: >
-    Review the context you got and expand each topic into a full section for a report.
-    Make sure the report is detailed and contains any and all relevant information.
+    Analyze the collected stock data related to {topic}
   expected_output: >
-    A fully fledged report with the main topics, each with a full section of information.
-    Formatted as markdown without '```'
-  agent: reporting_analyst
+    A comprehensive analysis report highlighting key trends, insights, and recommendations based on the collected stock data
+  agent: stock_data_analyst
+
+stock_risk_assessment_task:
+  description: >
+    Evaluate and assess the risks associated with stock investments related to {topic}
+  expected_output: >
+    A detailed risk assessment report outlining potential risks, mitigation strategies, and recommendations for stock investments related to {topic}
+  agent: stock_risk_assessor
+
+stock_reporting_task:
+  description: >
+    Compile and present stock data and analysis related to {topic}
+  expected_output: >
+    A comprehensive report that highlights key trends, insights, and recommendations based on the collected stock data and analysis
+  agent: stock_reporter
+
+stock_summary_task:
+  description: >
+    Summarize the findings and insights from the research, data collection, analysis, and risk assessment related to {topic}
+  expected_output: >
+    A concise summary report that provides an overview of the key findings, insights, and recommendations related to {topic}
+  agent: stock_reporter
+
+
+
+
+
+
+
+

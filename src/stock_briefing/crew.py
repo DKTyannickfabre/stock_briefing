@@ -11,16 +11,56 @@ class StockBriefing():
     tasks: list[Task]
 
     @agent
-    def researcher(self) -> Agent:
+    def stock_data_collector(self) -> Agent:
         return Agent(
-            config=self.agents_config['researcher'], # type: ignore[index]
+            config=self.agents_config['stock_data_collector'], # type: ignore[index]
             verbose=True
         )
-
+    
     @task
-    def research_task(self) -> Task:
+    def stock_data_collection_task(self) -> Task:
         return Task(
-            config=self.tasks_config['research_task'], # type: ignore[index]
+            config=self.tasks_config['stock_data_collection_task'], # type: ignore[index]
+        )
+
+    @agent
+    def stock_data_analyst(self) -> Agent:
+        return Agent(
+            config=self.agents_config['stock_data_analyst'], # type: ignore[index]
+            verbose=True
+        )
+    @task
+    def stock_data_analysis_task(self) -> Task:
+        return Task(
+            config=self.tasks_config['stock_data_analysis_task'], # type: ignore[index]
+        )
+    @agent
+    def stock_risk_assessor(self) -> Agent:
+        return Agent(
+            config=self.agents_config['stock_risk_assessor'], # type: ignore[index]
+            verbose=True
+        )
+    @task
+    def stock_risk_assessment_task(self) -> Task:
+        return Task(
+            config=self.tasks_config['stock_risk_assessment_task'], # type: ignore[index]
+        )
+
+    @agent
+    def stock_reporter(self) -> Agent:
+        return Agent(
+            config=self.agents_config['stock_reporter'], # type: ignore[index]
+            verbose=True
+        )
+    @task
+    def stock_reporting_task(self) -> Task:
+        return Task(
+            config=self.tasks_config['stock_reporting_task'], # type: ignore[index]
+        )
+    @task
+    def stock_summary_task(self) -> Task:
+        return Task(
+            config=self.tasks_config['stock_summary_task'], # type: ignore[index]
         )
 
     @crew
