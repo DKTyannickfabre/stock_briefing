@@ -1,36 +1,36 @@
 stock_data_collection_task:
   description: >
-    Collect and organize stock data related to {topic}
+    Collect and organize stock data related to {ticker}
   expected_output: >
-    A structured dataset containing relevant stock data for {topic}
+    A structured dataset containing relevant stock data for {ticker}
   agent: stock_data_collector
 
 stock_data_analysis_task:
   description: >
-    Analyze the collected stock data related to {topic}
+    Analyze the collected stock data related to {ticker}
   expected_output: >
     A comprehensive analysis report highlighting key trends, insights, and recommendations based on the collected stock data
   agent: stock_data_analyst
 
 stock_risk_assessment_task:
   description: >
-    Evaluate and assess the risks associated with stock investments related to {topic}
+    Evaluate and assess the risks associated with stock investments related to {ticker}
   expected_output: >
-    A detailed risk assessment report outlining potential risks, mitigation strategies, and recommendations for stock investments related to {topic}
+    A detailed risk assessment report outlining potential risks, mitigation strategies, and recommendations for stock investments related to {ticker}
   agent: stock_risk_assessor
 
 stock_reporting_task:
   description: >
-    Compile and present stock data and analysis related to {topic}
+    Compile and present stock data and analysis related to {ticker}
   expected_output: >
     A comprehensive report that highlights key trends, insights, and recommendations based on the collected stock data and analysis
   agent: stock_reporter
 
 stock_summary_task:
   description: >
-    Summarize the findings and insights from the research, data collection, analysis, and risk assessment related to {topic}
+    Summarize the findings and insights from the research, data collection, analysis, and risk assessment related to {ticker}
   expected_output: >
-    A concise summary report that provides an overview of the key findings, insights, and recommendations related to {topic}
+    A concise summary report that provides an overview of the key findings, insights, and recommendations related to {ticker}
   agent: stock_reporter
 
 
