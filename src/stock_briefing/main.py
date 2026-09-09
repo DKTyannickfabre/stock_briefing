@@ -28,7 +28,7 @@ def train():
     Train the crew for a given number of iterations.
     """
     inputs = {
-        "ticker": "AAPL",
+        "ticker": "SEC0",
     }
     try:
         StockBriefing().crew().train(n_iterations=int(sys.argv[1]), filename=sys.argv[2], inputs=inputs)
